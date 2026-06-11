@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/"
+title = "Doação de Alimentos"
+version = "1.0.0"
+id = "artifacts/doacao-alimentos"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/" ]
+localPort = 19706
+
+[services.development]
+run = "pnpm --filter @workspace/doacao-alimentos run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/doacao-alimentos", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/doacao-alimentos", "run", "serve" ]
+
+[services.env]
+PORT = "19706"
+BASE_PATH = "/"
