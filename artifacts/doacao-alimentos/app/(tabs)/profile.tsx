@@ -51,12 +51,12 @@ export default function ProfileScreen() {
   const menuItems = [
     {
       icon: "info" as keyof typeof Feather.glyphMap,
-      label: "Sobre o DoaAlimento",
+      label: "Sobre o Doa Food",
       desc: "Nossa missão e como funciona",
       onPress: () => {
         Alert.alert(
-          "Sobre o DoaAlimento",
-          "O DoaAlimento conecta doadores e instituições para facilitar a doação de alimentos lacrados e combater o desperdício alimentar na comunidade local.",
+          "Sobre o Doa Food",
+          "O Doa Food conecta doadores e instituições para facilitar a doação de alimentos lacrados e combater o desperdício alimentar na comunidade local.",
           [{ text: "OK" }]
         );
       },

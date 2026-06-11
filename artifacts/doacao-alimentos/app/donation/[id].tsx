@@ -104,7 +104,7 @@ export default function DonationDetailScreen() {
   function openWhatsApp(phone: string, name: string) {
     const cleaned = phone.replace(/\D/g, "");
     const msg = encodeURIComponent(
-      `Olá ${name}, vi sua doação "${donation!.title}" no app DoaAlimento e gostaria de buscar.`
+      `Olá ${name}, vi sua doação "${donation!.title}" no app Doa Food e gostaria de buscar.`
     );
     Linking.openURL(`https://wa.me/55${cleaned}?text=${msg}`);
   }

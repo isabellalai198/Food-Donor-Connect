@@ -78,7 +78,7 @@ export default function OnboardingScreen() {
         </View>
 
         <Text style={[styles.appName, { color: colors.foreground }]}>
-          DoaAlimento
+          Doa Food
         </Text>
         <Text style={[styles.tagline, { color: colors.mutedForeground }]}>
           Conectando doadores e instituições{"\n"}para combater o desperdício alimentar
